@@ -68,5 +68,12 @@ node {
       healthy: "",
       pattern: "build/reports/checkstyle/main.xml",
       unHealthy: ""])
+
+
+    // ------------------------------------
+   // -- ETAPA: PmdPublisher
+   // ------------------------------------
+   stage 'PmdPublisher'
+    step([$class: 'PmdPublisher', pattern: '**/target/pmd.xml'])
    
 }
