@@ -37,5 +37,4 @@ public class Calculator implements ICalculator {
 		return result;
 	}
 	
-	//Un nuevo comentario
 }
